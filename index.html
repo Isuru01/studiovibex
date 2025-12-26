@@ -2,70 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Studio VibeX — Independent Game Developer</title>
+  <title>Studio VibeX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
+    :root {
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent: #2563eb;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
       margin: 0;
-      padding: 40px;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: #020617;
-      padding: 32px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 32px;
-      color: #38bdf8;
-    }
-    h2 {
-      margin-bottom: 8px;
-      font-size: 20px;
-      color: #a5b4fc;
-    }
-    p {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
       line-height: 1.6;
-      color: #cbd5f5;
     }
-    .footer {
-      margin-top: 32px;
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    header {
+      margin-bottom: 120px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 16px 0;
+    }
+
+    header p {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin: 0;
+    }
+
+    section {
+      margin-bottom: 96px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    section p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 720px;
+    }
+
+    .contact p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    footer {
+      margin-top: 120px;
+      padding-top: 32px;
+      border-top: 1px solid #e5e7eb;
       font-size: 14px;
-      color: #94a3b8;
+      color: #64748b;
+      max-width: 720px;
+    }
+
+    footer strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      header {
+        margin-bottom: 80px;
+      }
+
+      section {
+        margin-bottom: 72px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Studio VibeX</h1>
+  <main class="wrapper">
+    <header>
+      <h1>Studio VibeX</h1>
+      <p>
+        Studio VibeX is an independent game development studio operated by
+        <strong>Isuru Akalanka</strong>.
+      </p>
+    </header>
 
-    <p>
-      Studio VibeX is an independent game development studio operated by
-      <strong>Isuru Akalanka</strong>.
-    </p>
+    <section>
+      <h2>What we do</h2>
+      <p>
+        We create casual and interactive digital experiences, including
+        Facebook Instant Games, with a strong focus on simplicity,
+        performance, and accessibility.
+      </p>
+    </section>
 
-    <h2>What we do</h2>
-    <p>
-      We create casual and interactive games, including Facebook Instant Games,
-      focused on fun, performance, and accessibility.
-    </p>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Phone: +94 769294072</p>
+      <p>Email: isuruakalanka071@gmail.com</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>
-      Phone: +94 769294072<br />
-      Email: your-email@example.com
-    </p>
-
-    <div class="footer">
-      Studio VibeX is operated by Isuru Akalanka (Sole Proprietor).<br />
-      All trademarks and content © Isuru Akalanka.
-    </div>
-  </div>
+    <footer>
+      <p>
+        <strong>Legal</strong><br />
+        Studio VibeX is operated by Isuru Akalanka as a Sole Proprietor.<br />
+        All trademarks and content © Isuru Akalanka.
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
